@@ -140,19 +140,7 @@ main article > p {
 /* End Main */
 
 
-/* Doctor navigation */
 
-.nav-justified>li>a {
-	white-space: nowrap;
-	border: 1px solid #ebebeb;
-	color: #555;
-	font-size: 14px;
-	padding: 5px 15px;
-}
-
-.nav-justified>li.active>a {
-	color: #00c0ff;
-}
 
 main > footer {
 	padding-top: 30px;
@@ -171,15 +159,29 @@ main > footer .nav.nav-pills>li>a:hover {
 	color: #00c0ff;
 }
 
+.la-page-header {
+    border-bottom: 15px solid;
+    margin-bottom: 15px;
+}
+
+.la-page-nav > li > a {
+    white-space: nowrap;
+    border: 1px solid #ebebeb;
+    color: #555;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+
+
+.la-nav-vertical {
+
+}
+
 /* Doctors section */
 .la-doctor-list h2, h3 {
 	color: #555555;
 	font-size: 22px;
-}
-
-.la-doctor-list header {
-	border-bottom: 15px solid #e2083a;
-	margin-bottom: 15px;
 }
 
 .la-doctor-short {
@@ -213,6 +215,8 @@ main > footer .nav.nav-pills>li>a:hover {
 .la-doctor-short a {
 	color: #1daee3;
 	font-size: 16px;
+    display: block;
+    text-align: right;
 }
 
 
