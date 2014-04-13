@@ -70,8 +70,11 @@
                     <div class="row">
                         <ul class="nav nav-pills navbar-right">
                             <li><a href="about.html">О компании</a></li>
+                            <li class="nav-separator"></li>
                             <li><a href="clinic.html">Клиника</a></li>
+                            <li class="nav-separator"></li>
                             <li><a href="training-center.html">Учебный центр</a></li>
+                            <li class="nav-separator"></li>
                             <li><a href="contact.html">Контакты</a></li>
                         </ul>
                     </div>
@@ -93,8 +96,8 @@
             <ul class="nav nav-justified la-page-nav">
                 <li><a href="doctors-experts.html">Врачи/Эксперты</a></li>
                 <li class="active"><a href="service-price.html">Услуги/Цены</a></li>
-                <li><a href="#">Расположение</a></li>
-                <li><a href="#">Записаться на прием</a></li>
+                <li><a href="location.html">Расположение</a></li>
+                <li><a href="appointment.html">Записаться на прием</a></li>
                 <li><a href="lecturers-experts.html">Лекторы/Эксперты</a></li>
                 <li><a href="educational-programs.html">Образовательные программы</a></li>
             </ul>
@@ -104,7 +107,7 @@
         <section class="la-doctor-list">
 
             <header class="la-page-header">
-                <h2>наши медицинские услуги и цены</h2>
+                <h2>Медицинские услуги и цены</h2>
 
                 <h3>В центре проводятся:</h3>
             </header>
@@ -138,7 +141,7 @@
                 <li>Цифровая диагностика - компютерная томография, ортопантомография</li>
             </ul>
 
-            <h3>Наши расценки</h3>
+            <h3>Расценки</h3>
 
             <table class="table">
                 <thead>
@@ -227,12 +230,12 @@
 
         <footer>
             <ul class="nav nav-pills">
-                <li><a href="#">Врачи/Эксперты</a></li>
-                <li><a href="#">Услуги/Цены</a></li>
-                <li><a href="#">Расположение</a></li>
-                <li><a href="#">Записаться на прием</a></li>
-                <li class="active"><a href="#">Лекторы/Эксперты</a></li>
-                <li><a href="#">Образовательные программы</a></li>
+                <li><a href="doctors-experts.html">Врачи/Эксперты</a></li>
+                <li class="active"><a href="service-price.html">Услуги/Цены</a></li>
+                <li><a href="location.html">Расположение</a></li>
+                <li><a href="appointment.html">Записаться на прием</a></li>
+                <li><a href="lecturers-experts.html">Лекторы/Эксперты</a></li>
+                <li><a href="educational-programs.html">Образовательные программы</a></li>
             </ul>
         </footer>
     </main>
@@ -256,7 +259,12 @@
         <hr>
         <footer>
             <div class="row">
-                <img src="./img/copyright.png" alt="">
+                <div class="col-sm-6">
+                    <img src="./img/copyright.png" class="la-copyright" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <address class="la-dev pull-right">Разработана <a href="http://overallsolutions.am/">OverallSolutions.am</a></address>
+                </div>
             </div>
         </footer>
     </footer>
@@ -268,39 +276,5 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
 <script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/vendor/owl.carousel.min.js"></script>
-
-<script src="js/main.js"></script>
-
-<script>
-    $(document).ready(function () {
-
-        $("#owl-idc").owlCarousel({
-
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true,
-            itemsScaleUp: false,
-            autoHeight: true,
-            autoPlay: 3000,
-            stopOnHover: true
-            // "singleItem:true" is a shortcut for:
-            // items : 1,
-            // itemsDesktop : false,
-            // itemsDesktopSmall : false,
-            // itemsTablet: false,
-            // itemsMobile : false
-
-        });
-
-    });
-</script>
-
-<!-- <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src='//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script> -->
 </body>
 </html>

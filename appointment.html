@@ -15,20 +15,18 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
     <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
     <link rel="stylesheet" href="main.css">
 
     <style>
         .la-page-header {
-            border-color: #00a0ee;
+            border-color: #174D59;
         }
 
         .la-page-nav > li.active > a,
         .la-page-nav > li > a:hover {
             color: #fff;
-            background-color: #00a0ee;
+            background-color: #174D59;
         }
     </style>
 </head>
@@ -97,52 +95,75 @@
                 <li><a href="doctors-experts.html">Врачи/Эксперты</a></li>
                 <li><a href="service-price.html">Услуги/Цены</a></li>
                 <li><a href="location.html">Расположение</a></li>
-                <li><a href="appointment.html">Записаться на прием</a></li>
+                <li class="active"><a href="appointment.html">Записаться на прием</a></li>
                 <li><a href="lecturers-experts.html">Лекторы/Эксперты</a></li>
-                <li class="active"><a href="educational-programs.html">Образовательные программы</a></li>
+                <li><a href="educational-programs.html">Образовательные программы</a></li>
             </ul>
         </header>
 
 
-        <section class="">
+        <section class="la-doctor-list">
 
             <header class="la-page-header">
-                <h3>Образовательные программы</h3>
+                <h3>Записаться на прием</h3>
             </header>
 
             <div class="row">
-                <div class="col-sm-3">
-                    <ul class="list-unstyled la-nav-vertical">
-                        <li class="active"><a href="#">имплантология</a></li>
-                        <li><a href="#">эстетика</a></li>
-                        <li><a href="#">пародонтология</a></li>
-                        <li><a href="#">эндодонтия</a></li>
-                        <li><a href="#">ортопедия</a></li>
-                        <li><a href="#">ортодонтия</a></li>
-                        <li><a href="#">рентгенодиагностика</a></li>
-                        <li><a href="#">зуботехника</a></li>
-                        <li><a href="#">гигиена и отбеливание</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-9">
-                    <h2>Образовательная программа имплантология</h2>
 
-                    <p>Дентальная имплантация, реконструктивная восстановительная хирургия челюстей, удаление сложных
-                        зубов мудрости, кист и новообразований лица и шеи.
-                        Ортодонтическая коррекция прикуса с использованием брекет систем, инвизилайнеров
-                        Протезирование зубов и на имплантатах с использованием цифровых технологий и совремейнейших
-                        материалов (безметалловая керамика, оксид циркония)
-                        Профессиональная эндодонтия с использованием операционного микроскопа и инновационной
-                        диагностической аппаратуры
-                        Эстетическая стоматология - виниры, люминиры, керамические вкладки, коррекция десневых тканей,
-                        отбеливание
-                        Эстетическая хирургия лица - блефаропластика, отопластика (коррекция оттопыренных ушных
-                        раковин), удаление доброкачественных новообразований лица и шеи,коррекция рубцовых деформаций,
-                        дермобразия, ботокс, гиалуроновая кислота.
-                        Пародонтология - лоскутные операции, закрытие рецессий, вестибулопластики, профессиональная
-                        гигиена, клинические удлинения зубов, лазерная гингивэктомия</p>
+                <div class="well well-sm">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Имя *</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Введите имя"
+                                           required="required"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail *</label>
+
+                                    <div class="input-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Введите email"
+                                               required="required"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Номер телефона *</label>
+
+                                    <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span>
+                                </span>
+                                        <input type="tel" class="form-control" id="phone"
+                                               placeholder="Введите номер телефона" required="required"/></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="subject">Тема *</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Введите тему"
+                                           required="required"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Сообщение *</label>
+                                    <textarea name="message" id="message" class="form-control" rows="4" cols="25"
+                                              required="required"
+                                              placeholder="Введите сообщение"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    Записаться
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+
             </div>
+
         </section>
 
         <footer>
@@ -150,9 +171,9 @@
                 <li><a href="doctors-experts.html">Врачи/Эксперты</a></li>
                 <li><a href="service-price.html">Услуги/Цены</a></li>
                 <li><a href="location.html">Расположение</a></li>
-                <li><a href="appointment.html">Записаться на прием</a></li>
+                <li class="active"><a href="appointment.html">Записаться на прием</a></li>
                 <li><a href="lecturers-experts.html">Лекторы/Эксперты</a></li>
-                <li class="active"><a href="educational-programs.html">Образовательные программы</a></li>
+                <li><a href="educational-programs.html">Образовательные программы</a></li>
             </ul>
         </footer>
     </main>
@@ -189,11 +210,9 @@
 </div>
 <!-- /container -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> -->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
 <script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/vendor/owl.carousel.min.js"></script>
-
 </body>
 </html>

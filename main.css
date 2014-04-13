@@ -21,7 +21,6 @@ address
 	margin-right: 0;
 }
 
-
 .navbar-default {
 	background-color: #fff;
 	border-color: #fff;
@@ -67,25 +66,25 @@ td:last-child {
 
 /* navigation contact section */
 .la-contact .la-phone {
-	background: url(./img/contact.png) no-repeat 0 0;
+	background: url(img/contact.png) no-repeat 0 0;
 	width: 192px;
 	height: 18px;
 }
 
 .la-contact .la-email {
-	background: url(./img/contact.png) no-repeat 0 -18px;
+	background: url(img/contact.png) no-repeat 0 -18px;
 	width: 192px;
 	height: 18px;
 }
 
 .la-contact a.la-facebook {
-	background: url(./img/facebook.png) no-repeat 0 0;
+	background: url(img/facebook.png) no-repeat 0 0;
 	width: 32px;
 	height: 32px;
 }
 
 .la-contact a.la-facebook:hover {
-	background: url(./img/facebook.png) no-repeat 0 -32px;
+	background: url(img/facebook.png) no-repeat 0 -32px;
 }
 
 .la-lang {
@@ -162,6 +161,13 @@ main > footer .nav.nav-pills>li>a:hover {
 .la-page-header {
     border-bottom: 15px solid;
     margin-bottom: 15px;
+    border-color: #00c0ff;
+}
+
+.la-page-nav > li.active > a,
+.la-page-nav > li > a:hover {
+    color: #fff;
+    background-color: #00c0ff;
 }
 
 .la-page-nav > li > a {
@@ -234,14 +240,24 @@ main > footer .nav.nav-pills>li>a:hover {
 footer > header h2 {
 	color: #fff;
 	font-size: 21px;
-	font-weight: 100;
+	font-weight: 500;
 	background: #00c0ff;
 	padding: 4px 15px;
 	margin: 0;
 }
 
 footer footer {
-	padding-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.la-dev {
+    margin-top: 20px;
+    color: #8f8e8e;
+    font-weight: 700;
+}
+
+.la-copyright {
+
 }
 /* End Footer */
 
@@ -323,8 +339,17 @@ a.logo h2
 	}
 
 	.nav-pills > li+li {
-		margin-left: 1px;
+		/*margin-left: 1px;*/
 	}
+
+    .nav-separator {
+        width: 1px;
+        height: 34px;
+        top: 1px;
+        border-bottom: 8px solid #00c0ff;
+        border-top: 8px solid #00c0ff;
+    }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -334,6 +359,7 @@ a.logo h2
 		font-size:14px;
 		padding:6px 21px;
 	}
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -372,4 +398,12 @@ a.logo h2
 		font-size:18px;
 		padding:8px 25px;
 	}
+
+    .nav-separator {
+        width: 1px;
+        height: 43px;
+        top: 1px;
+        border-bottom: 10px solid #00c0ff;
+        border-top: 10px solid #00c0ff;
+    }
 }
