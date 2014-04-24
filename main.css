@@ -128,7 +128,7 @@ td:last-child {
 }
 
 main article {
-	margin: 10px 30px 50px;
+	margin: 30px 30px 50px;
 }
 
 main article > p {
@@ -207,7 +207,6 @@ main > footer .nav.nav-pills>li>a:hover {
 }
 
 .la-doctor-short h5 {
-	padding: 0 20px 0;
 	color: #555;
 	font-size: 16px;
 }
